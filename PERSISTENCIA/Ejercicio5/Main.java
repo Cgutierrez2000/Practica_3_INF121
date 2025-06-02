@@ -13,7 +13,7 @@ public class Main {
         Medicamento m2 = new Medicamento("Paracetamol", 1002, "fiebre", 5.00);
         Medicamento[] meds1 = { m1, m2 };
         Farmacia f1 = new Farmacia("Cruz Roja", 1, "Av. Libertad", meds1.length);
-        f1.setMedicamentos(meds1); // Usaremos un setter que agregaremos en breve
+        f1.setMedicamentos(meds1);
 
         // Crear medicamentos para farmacia 2
         Medicamento m3 = new Medicamento("Bronquix", 2001, "tos", 12.00);
@@ -37,7 +37,7 @@ public class Main {
         System.out.println("\n--- Farmacia que contiene Golpex ---");
         arch.mostrarMedicamentosMenosTos("Golpex");
 
-        // Precio mínimo de medicamentos para la tos
+        // Precio minimo de medicamentos para la tos
         System.out.println("\n--- Precio mínimo de medicamentos para la tos ---");
         double precioMin = arch.precioMedicamentoTos();
         System.out.println("Precio mínimo: " + precioMin);
